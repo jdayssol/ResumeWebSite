@@ -1,0 +1,19 @@
+<header>
+    <nav>
+        <ul>
+            {% for item in site.data.nav %}
+            <li><a href="{{ item.link }}" {% if link == "/" %}class="logo" {% endif %}>{{ item.title }}</a></li>
+            {% endfor %}
+            <!-- <li><a href="/index.html" class="logo">JD</a></li>
+                    <li><a href="/index.html#presentation">Presentation</a></li>
+                    <li><a href="/index.html#education">Education</a></li>
+                    <li><a href="/index.html#experience">Working Experience</a></li> -->
+        </ul>
+
+        <ul>
+            {% for items in site.data.social %}
+            <li><a href="{{ item.link }}" target="_blank"><i class='icon icon-{{item.icon}}'></i></a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

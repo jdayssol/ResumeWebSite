@@ -1,0 +1,14 @@
+title: Joseph Dayssol
+email: 
+description: 
+baseurl: "/"
+url: ""
+github_username: 
+
+markdown: kramdown
+
+collections:
+
+sass:
+    style: compressed
+    sass_dir: _sass
